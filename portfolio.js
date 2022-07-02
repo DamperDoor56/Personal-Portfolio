@@ -1,4 +1,4 @@
-//Nav-bar transparency
+//Const 
 const navbar = document.querySelector(".nav");
 const sectionOne = document.querySelector(".welcome-section");
 const backToTopButton = document.querySelector("#back-to-top-btn");
@@ -8,6 +8,7 @@ const copyMessage = document.querySelector(".copyMessage");
 const showMsg = document.querySelector(".showMsg");
 const showMsg2 = document.querySelector(".showMsg2");
 const copyMessage2 = document.querySelector(".copyMessage2")
+
 //Button animations
 window.addEventListener("scroll", scrollFunction);
 function scrollFunction(){
