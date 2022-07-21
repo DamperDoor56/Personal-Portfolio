@@ -317,7 +317,7 @@ nav{
 
 /* Who asked? section*/
 #about{
-    height: 10vh;
+    height: 15vh;
 }
 #particles-js canvas{
     position: absolute;
@@ -333,14 +333,14 @@ nav{
     z-index: 2;
 }
 #who-section-header{
-    font-size: 50px;
+    font-size: 3rem;
     display: flex;
-    padding: 100px 0px 20px 100px;
+    padding: 10.25rem 0px 1.25rem 6.25rem;
     color:var(--text);
     
 }
 #hrwho{
-    border-top: 2.5px solid;
+    border-top: 0.3rem solid;
     position: relative;
     left: 150px;
     width: 8%;
@@ -348,19 +348,19 @@ nav{
 }
 #text{
     font-family: monospace;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 100;
     color: rgb(26, 26, 26) ;
     background: #E76F51;
     width: 80%;
-    padding: 10px 10px 10px 50px;
-    margin-top:20px;
+    padding: 1rem 1rem 1rem 3rem;
+    margin-top:0.2rem;
     margin-left: 3%;
     z-index: -1;
     transition: 0.8s all ease-in-out;
 }
 #description{
-    width: 48%;
+    width: 40rem;
     margin-left: 3%;
     font-size: 20px;
     color: var(--text);
@@ -370,8 +370,8 @@ nav{
 }
 #imagenlarga{
     width: 20%;
-    margin-left: 780px;
-    margin-top: -380px;
+    margin-left: 45rem;
+    margin-top: -25rem;
     display: flex;
     z-index: 2;
     border-radius: 15px;
@@ -381,30 +381,28 @@ nav{
 
 /*Starts Work Section*/
 #comehere{
-    height: 5vh;
+    height: 2vh;
     margin-top: 160px;
 }
 #work{
     height: 100vh;
-    width: 90%;
-}
-.container {
-    padding: 0px;
-    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
 }
 #work .heading h1{
-    margin-top: 80px;
-    margin-left: 18%;
+    margin:2rem 0;
     color: var(--text);
-    font-size: 50px;
+    font-size: 3rem;
 }
-#serv{
-    border-top: 2.5px solid;
-    border-color: #e97725;
+.solid{
+    height: 0.1rem;
+    background: #e97725;
+    width: 6%;
     position: relative;
-    width: 5%;
-    left: 56%;
-    bottom: 5px;
+    left: 33.2rem;
+
 }
 .icon{
     font-size: 50px;
@@ -413,27 +411,28 @@ nav{
 }
 .content{
     display: grid;
-    grid-template-columns: 38% 38% 38%;
-    margin-left: 5%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 3rem;
+
 }
 .box{
-    margin: 10% 8% 3% 8%;
     text-align: center;
     height: auto;
 }
 .box h3{
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: normal;
     color: var(--text);
-    margin: 20px 0;
+    margin: 1rem 0;
 }
 .box p{
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
     color: var(--text);
 }
 #work .content .box .inner{
-    padding:30px 10px 30px 10px ;
+    padding: 1.5rem;
     text-align: center;
     position: relative;
 }
