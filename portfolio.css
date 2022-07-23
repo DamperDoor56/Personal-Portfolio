@@ -328,7 +328,7 @@ nav{
 }
 #Who{
     margin: auto;
-    height: auto;
+    height: 98vh;
     z-index: 2;
 }
 #who-section-header{
@@ -365,7 +365,7 @@ nav{
 #imagenlarga{
     width: 20%;
     margin-left: 45rem;
-    margin-top: -25rem;
+    margin-top: -23rem;
     display: flex;
     z-index: 2;
     border-radius: 15px;
@@ -375,11 +375,9 @@ nav{
 
 /*Starts Work Section*/
 #comehere{
-    max-height: 3vh;
-    margin-top: 5rem;
+    min-height: 10vh;
 }
 #work{
-    position: static;
     min-height: 110vh;
     display: flex;
     flex-wrap: wrap;
