@@ -194,7 +194,7 @@ nav{
     z-index: -1;
     position: absolute;
     object-fit: cover;
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     left: 0%;
     right: 0%;
@@ -327,7 +327,6 @@ nav{
     z-index: -1;
 }
 #Who{
-    position: relative;
     margin: auto;
     height: auto;
     z-index: 2;
@@ -340,13 +339,6 @@ nav{
     padding: 10.25rem 0px 1.25rem 6.25rem;
     color:var(--text);
     
-}
-#hrwho{
-    border-top: 0.3rem solid;
-    position: relative;
-    left: 150px;
-    width: 8%;
-    top: -30px;
 }
 #text{
     font-family: monospace;
@@ -801,28 +793,12 @@ a img{
         display: none;
     }
  /*Work section*/
- .container {
-    margin-top: -100px;
-}
-  #work{
-      width: auto;
-      height: auto;
-  }
-  #work .heading{
-    font-size: 40px;
-    padding-bottom: 100px;
-}
+
 #work .heading h1{
     text-shadow: var(--textshadow);
     text-decoration: underline;
     text-decoration-color: #e97725;
 }
-  #serv{
-    position: relative;
-    width: 25%;
-    left: 39%;
-    bottom: -34px;
-  }
 /*project Section*/
 #projects{
     height: auto;
