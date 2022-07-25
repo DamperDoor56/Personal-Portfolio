@@ -505,6 +505,7 @@ nav{
 }
 .content a:hover{
     color: #f8961e;
+    transition: 0.8s all-in-out;
 }
 .img-wrapper > .content{
     position: absolute;
