@@ -721,6 +721,7 @@ body{
         position:absolute;
         bottom: 200px;
         left: 20px;
+        z-index: 1;
     }
     .copyMessage2{
         height: 36px;
@@ -728,6 +729,7 @@ body{
         position:absolute;
         bottom: 100px;
         left: 20px;
+        z-index: 1;
     }
     
     body{
