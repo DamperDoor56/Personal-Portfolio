@@ -481,12 +481,14 @@ body{
     text-align: center;
 }
 .grid-me{
-    margin-top: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
+    display:-webkit-box;
+    height: 250px;
+    gap: 2rem;
+    overflow-x: scroll !important;
+    padding: 2rem;
 }
 .img-wrapper{
+    width: 500px;
     position: relative;
     overflow: hidden;
 }
