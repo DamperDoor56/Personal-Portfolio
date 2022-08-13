@@ -560,7 +560,6 @@ body{
     border-color: #e97725;
 }
 #contact-links{
-    overflow-y: hidden;
     display: grid;
     grid-template-columns: 200px 200px 200px 200px;
     justify-content: center;
@@ -571,6 +570,7 @@ body{
     position: relative;
 }
 #contact-links button{
+    overflow-y: hidden;
     font-size: 34px;
     text-decoration: none;
     color: var(--text);
