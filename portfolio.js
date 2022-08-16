@@ -9,6 +9,27 @@ const showMsg = document.querySelector(".showMsg");
 const showMsg2 = document.querySelector(".showMsg2");
 const copyMessage2 = document.querySelector(".copyMessage2")
 
+
+
+// Swiper config
+
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 3,
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
 //Button animations
 window.addEventListener("scroll", scrollFunction);
 function scrollFunction(){
@@ -355,3 +376,4 @@ function closeNav() {
   document.getElementById("sideNavigation").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
+

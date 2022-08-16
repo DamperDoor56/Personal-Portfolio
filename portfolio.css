@@ -6,6 +6,10 @@
     margin: 0%;
     padding: 0%;
     font-family: 'Roboto', sans-serif;
+   
+}
+body{
+    overflow-x: hidden;
 }
 *::-webkit-scrollbar{
     background-color: #111;
@@ -323,6 +327,7 @@ body{
     z-index: -1;
 }
 #Who{
+    overflow-x: hidden;
     margin: auto;
     height: 98vh;
     z-index: 2;
@@ -480,67 +485,53 @@ body{
     color: var(--text);
     text-align: center;
 }
-.grid-me{
-    display:-webkit-box;
-    height: 250px;
-    gap: 2rem;
-    overflow-x: scroll !important;
+.swiper {
+    width: 100%;
+    height: 55%;
     padding: 2rem;
-}
-.img-wrapper{
-    width: 500px;
-    position: relative;
-    overflow: hidden;
-}
-.img-wrapper > img{
+  }
+
+  .swiper-slide {
+    cursor: grab;
+    text-align: center;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(17, 17, 17, 0.863);
+    color: snow;
+    width: 300px;
+    height: 300px;
+  }
+  .swiper-slide span{
+    padding: 1rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: #e97725;
+  }
+  .swiper-slide h1{
+    font-size: 25px;
+  }
+  .swiper-slide p{
+    font-size: 15px;
+  }
+  .swiper-slide img {
     display: block;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-.content a{
-    color: #fff;
+  }
+.icons-projects a{
+    color: #e97725;
     text-decoration: none;
+    transition: all 0.5s;
+    font-family: 'Press Start 2P', cursive;
 }
-.content a:hover{
-    color: #f8961e;
-    transition: 0.8s all-in-out;
-}
-.img-wrapper > .content{
-    position: absolute;
-    inset: 0;
-    font-size: 2rem;
-    padding: 1rem;
-    background: rgba(97, 97, 97, 0.685);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img-wrapper > img, 
-.img-wrapper > .content{
-    transition: 200ms ease-in-out;
-}
-.img-wrapper:hover > img.blur {
-    filter: blur(0.1px);
-}
-.img-wrapper:hover > img.zoom{
-    transform: scale(1.3);
-}
-.img-wrapper > .content.slide-up{
-    transform: translateY(-100%);
-}
-.img-wrapper:hover > .content.slide-up{
-    transform: translateY(0);
-}
-.image-icons{
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
+.icons-projects a:hover{
+    color: #E76F51;
 }
 /*Contact section*/
 .contact-section{
     background:none;
     height: 80vh;
+    z-index: 12;
 }
 .contact-section h2{
     text-decoration: underline;
@@ -637,6 +628,10 @@ body{
     border-right:10px solid transparent;
     border-left:10px solid transparent;
 }
+#txtCopyInput,#txtCopyInput2{
+    position: fixed;
+    transform: translateX(-1000%);
+ }
 .dev{
     padding-top: 70px;
     display: flex;
@@ -814,6 +809,20 @@ body{
     }
 }
 @media screen and (max-width:800px) {
+    .swiper {
+        margin: 0%;
+        width: 100%;
+        height: 400px;
+        padding: 0;
+        overflow-y: hidden;
+      }
+      .swiper-slide {
+        width: 600px;
+        height: 300px;
+      }
+    body{
+        overflow-y: hidden;
+    }
     .nav{
         position: absolute;
     }
