@@ -473,65 +473,95 @@ body{
     height: 100%;
     z-index: -1;
 }
-#projects{
-    height: 110vh;
-    z-index: 2;
+.mobile-projects{
+    display: none;
 }
-#project-header{
-    text-decoration: underline;
-    text-decoration-color: #e97725;
-    padding: 5rem;
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+.projectos{
+    padding: 2rem;
+}
+.projectos span a{
+    overflow: hidden;
+    text-decoration: none;
+    color: #e97725;
+    padding: 1rem;
+    font-size: 20px;
+}
+.projectos img{
+    width: 100%;
+}
+.team{
+    height: 100vh;
+    z-index: 1;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 6rem;
+    margin-top: 3rem;
     font-size: 3rem;
     color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: #e97725;
+}
+
+.team .slide{
     text-align: center;
 }
-.swiper {
-    text-align: center;
-    width: 100vw;
-    height: 60vh;
-    margin: 0;
+
+.team .slide:hover .image .share{
+    transform: translateY(-100%);
 }
 
-
-.swiper-slide {
--moz-user-select: -moz-none;
--khtml-user-select: none;
--webkit-user-select: none;
--o-user-select: none;
-user-select: none;
-border-radius: 5px;
-background: linear-gradient(180deg, rgba(247,145,193,1) 0%, rgba(5,22,22,1) 0%, rgba(14,23,30,1) 0%, rgba(33,32,50,1) 60%);
-box-shadow: 0px 10px 13px -7px #000000, 5px 8px 17px 5px rgba(0,0,0,0.18);
-display: flex;
-height: 250px !important;
-width: 200px !important;
-flex-direction: column;
-align-items: center;
-padding: 10px;
-cursor: grab;
+.team .slide .image{
+    position: relative;
+    overflow: hidden;
 }
 
-.swiper-slide:active {
-    cursor: grabbing;
-}
-.swiper-slide img {
-    display: block;
+.team .slide .image img{
+    background-color: #f1eae9;
     width: 100%;
-  }
+}
 
-.icons-projects a{
-    color: #e97725;
-    font-size: 15px;
-    letter-spacing: 3px;
-    text-decoration: none;
+.team .slide .image .share{
+    position: absolute;
+    left: 0;
+    transform: translateY(100%);
+    right: 0;
+    background: rgba(0,0,0,0.8);
     transition: all 0.5s;
-    font-family: 'Press Start 2P', cursive;
 }
-.tech{
-    color: snow;
+
+.team .slide .image .share span{
+    color: var(--text);
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: all 0.5s;
 }
-.icons-projects a:hover{
-    color: #ff3300;
+
+.team .slide .image .share a:hover{
+    color: #e97725;
+}
+.team .slide .content2 span a{
+    font-size: 23px;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #e97725;
+    transition: 0.5s;
+}
+.team .slide .content2 span a:hover{
+    color: #ff6a00;
+}
+.team-slider .swiper-button-next{
+    color: #444;
+}
+
+.team-slider .swiper-button-prev{
+    color: #444;
 }
 /*Contact section*/
 .contact-section{
@@ -815,17 +845,15 @@ cursor: grab;
     }
 }
 @media screen and (max-width:800px) {
-    .swiper {
-        margin: 0%;
-        width: 100%;
-        height: 400px;
-        padding: 0;
-        overflow-y: hidden;
-      }
-      .swiper-slide {
-        width: 600px;
-        height: 300px;
-      }
+    .team{
+        display: none;
+    }
+    .mobile-projects{
+        display: block;
+    }
+    .content2{
+        overflow: hidden;
+    }
     body{
         overflow-y: hidden;
     }

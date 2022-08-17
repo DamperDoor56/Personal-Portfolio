@@ -13,20 +13,24 @@ const copyMessage2 = document.querySelector(".copyMessage2")
 
 // Swiper config
 
-var swiper = new Swiper(".mySwiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
+var swiper = new Swiper(".team-slider", {
+  loop:true,
+  grabCursor:true,
+  spaceBetween:20,
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
   },
-  pagination: {
-    el: ".swiper-pagination",
+  breakpoints: {
+      0: {
+          slidesPerView: 1,
+      },
+      768: {
+          slidesPerView: 2,
+      },
+      991: {
+          slidesPerView: 3,
+      },
   },
 });
 
