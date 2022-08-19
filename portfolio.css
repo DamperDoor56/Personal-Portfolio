@@ -486,19 +486,15 @@ body{
 }
 .projectos .content2 {
     background-color: rgba(26, 25, 25, 0.918);
-    position: relative;
-    width: 100%;
     transition: all 0.5s;
-    height: 20%;
-    transform: translateY(100%);
-    bottom: 100px;
     display: flex;
     justify-content: center;
 }
-.projectos .content2 :hover {
-    transform: translateY(0%);
+.projectos span{
+    overflow-y: hidden;
 }
 .projectos span a{
+    
     overflow: hidden;
     text-decoration: none;
     color: #e97725;
