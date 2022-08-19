@@ -477,13 +477,26 @@ body{
     display: none;
 }
 .projects-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
-    text-align: center;
+    display: -webkit-box;
+    overflow-x: scroll;
 }
 .projectos{
     padding: 2rem;
+    overflow-y: hidden;
+}
+.projectos .content2 {
+    background-color: rgba(26, 25, 25, 0.918);
+    position: relative;
+    width: 100%;
+    transition: all 0.5s;
+    height: 20%;
+    transform: translateY(100%);
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+.projectos .content2 :hover {
+    transform: translateY(0%);
 }
 .projectos span a{
     overflow: hidden;
@@ -509,60 +522,69 @@ body{
     text-decoration-color: #e97725;
 }
 
-.team .slide{
+.swiper {
+    width: 50%;
+    height: 50%;
+  }
+
+  .swiper-slide {
     text-align: center;
-}
+    font-size: 18px;
+    background: #fff;
 
-.team .slide:hover .image .share{
-    transform: translateY(-100%);
-}
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
 
-.team .slide .image{
-    position: relative;
-    overflow: hidden;
-}
-
-.team .slide .image img{
-    background-color: #f1eae9;
+  .swiper-slide img {
+    display: block;
     width: 100%;
-}
-
-.team .slide .image .share{
+    height: 100%;
+    object-fit: cover;
+  }
+.swiper-slide .content-info{
     position: absolute;
     left: 0;
+    bottom: 0;
     transform: translateY(100%);
     right: 0;
     background: rgba(0,0,0,0.8);
+    height: 80px;
     transition: all 0.5s;
 }
+.content-info .info-buttons span a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #e97725;
+    transition: all 0.5s;
+}
+.content-info .info-buttons span a:hover{
+    color: #fc4a04;
+    letter-spacing: 3px;
+}
 
-.team .slide .image .share span{
+.swiper-slide .content-info span{
     color: var(--text);
     font-size: 1rem;
     padding: 0.5rem;
     transition: all 0.5s;
 }
 
-.team .slide .image .share a:hover{
-    color: #e97725;
-}
-.team .slide .content2 span a{
-    font-size: 23px;
-    padding: 0.5rem;
-    text-decoration: none;
-    color: #e97725;
-    transition: 0.5s;
-}
-.team .slide .content2 span a:hover{
-    color: #ff6a00;
-}
-.team-slider .swiper-button-next{
-    color: #444;
-}
+.swiper-slide:hover .content-info{
+    transform: translateY(0%);
+} 
 
-.team-slider .swiper-button-prev{
-    color: #444;
-}
 /*Contact section*/
 .contact-section{
     background:none;
