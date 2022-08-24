@@ -7,8 +7,8 @@ const btnCopy = document.getElementById("btnCopy");
 const copyMessage = document.querySelector(".copyMessage");
 const showMsg = document.querySelector(".showMsg");
 const showMsg2 = document.querySelector(".showMsg2");
-const copyMessage2 = document.querySelector(".copyMessage2")
-
+const copyMessage2 = document.querySelector(".copyMessage2");
+const loader = document.getElementById("preloader");
 
 
 // Swiper config
@@ -366,3 +366,11 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 }
 
+
+//Preloader
+
+window.addEventListener('load', function(load) {
+  window.removeEventListener('load', load, false);               
+  setTimeout(function(){loader.style.display = 'none'},3000);
+
+},false);
