@@ -343,8 +343,7 @@ body{
 }
 #text{
     font-family: monospace;
-    font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 800;
     color: rgb(26, 26, 26) ;
     background: #E76F51;
     width: 80%;
