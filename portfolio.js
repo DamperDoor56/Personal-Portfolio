@@ -13,11 +13,6 @@ const loader = document.getElementById("preloader");
 
 // Swiper config
 
-var swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
 
 //Button animations
 window.addEventListener("scroll", scrollFunction);
