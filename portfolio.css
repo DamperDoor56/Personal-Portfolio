@@ -762,7 +762,7 @@ body{
         width: 38rem;
     }
     .projects-section .header{
-        height: 6%;
+        height:fit-content;
     }
     .projects-cards{
         overflow: hidden;
