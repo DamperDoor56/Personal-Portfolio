@@ -962,8 +962,8 @@ body{
     text-decoration-color: #e97725;
 }
 /*project Section*/
-#projects{
-    height: auto;
+.projects-section{
+    height: 600vh;
     background-color: #060e169f;
 }
 
