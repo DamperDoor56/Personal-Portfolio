@@ -761,9 +761,6 @@ body{
     #description{
         width: 38rem;
     }
-    .projects-section{
-        height: 450vh;
-    }
     .projects-section .header{
         height: 6%;
     }
