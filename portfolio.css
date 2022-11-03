@@ -468,7 +468,7 @@ body{
 /*Starts projects section*/
 
 .projects-section{
-    height: 450vh;
+    height: 480vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
