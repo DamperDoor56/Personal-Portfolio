@@ -474,7 +474,7 @@ body{
     flex-direction: column;
     text-align: center;
 }
-.header{
+.projects-section .header{
     color: var(--text);
     text-decoration: underline;
     text-decoration-color: #e97725;
@@ -764,8 +764,12 @@ body{
     .projects-section{
         height: 450vh;
     }
+    .projects-section .header{
+        height: 6%;
+    }
     .projects-cards{
         overflow: hidden;
+        display: block;
     }
     .project-card-text{
         width: 100%;
