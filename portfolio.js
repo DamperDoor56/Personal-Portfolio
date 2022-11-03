@@ -365,7 +365,7 @@ function closeNav() {
 //Preloader
 
 window.addEventListener('load', function(load) {
-  window.removeEventListener('load', load, false);               
+  window.removeEventListener('load', load, false);    
   setTimeout(function(){loader.style.display = 'none'},3000);
 
 },false);
