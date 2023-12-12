@@ -28,8 +28,7 @@ hr {
     opacity: 1;
 }
 body{
-    background: linear-gradient(#0e0e14,#0e0e14d8,#0e0e14e1),
-    url(https://res.cloudinary.com/dweiaqd6l/image/upload/v1652813014/Captura_de_pantalla_194_ghhtwt.png);
+    background: linear-gradient(#0b0b18,#0e0e14,#0e0e14fd);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -624,7 +623,8 @@ body{
     top: -15px;
 }
 .copyMessage{
-    display: none;
+    display: flex;
+    opacity: 0;
     background: #e97725;
     color: var(--text);
     text-shadow: var(--box-shadow);
@@ -634,9 +634,8 @@ body{
     width: 110px;
     height: 36px;
     border-radius: 25px;
-    position:absolute;
-    bottom: 100px;
-    right: 520px;
+    position:relative;
+    bottom: 150px;
 }
 #arrow{
     position: relative;
@@ -651,7 +650,8 @@ body{
     border-left:10px solid transparent;
 }
 .copyMessage2{
-    display: none;
+    display: flex;
+    opacity: 0;
     background: #e97725;
     color: var(--text);
     text-shadow: var(--box-shadow);
@@ -659,11 +659,9 @@ body{
     font-size: 25px;
     z-index: 999;
     width: 110px;
-    height: 36px;
     border-radius: 25px;
-    position:absolute;
-    bottom: 100px;
-    right: 300px;
+    position:relative;
+    bottom: 150px;
 }
 #arrow2{
     position: relative;
@@ -836,17 +834,14 @@ body{
     .copyMessage{
         height: 36px;
         border-radius: 25px;
-        position:absolute;
-        bottom: 200px;
-        left: 20px;
+        position:relative;
+        bottom: 150px;
         z-index: 1;
     }
     .copyMessage2{
-        height: 36px;
         border-radius: 25px;
-        position:absolute;
-        bottom: 100px;
-        left: 20px;
+        position:relative;
+        bottom: 150px;
         z-index: 1;
     }
     
