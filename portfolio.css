@@ -751,6 +751,62 @@ body{
 }
 /*Ends contact section*/
 
+.bussiness{
+    border-radius: 50px;
+    object-fit: cover;
+}
+/*experience Section*/
+.experience-section{
+    height: fit-content;
+    background-color: #060e169f;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.experience-section .header{
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: #e97725;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.experience-card{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    padding: 1rem;
+}
+.experience-card:hover .experience-card-text{
+    opacity: 1;
+    animation: bounce 5s linear infinite;
+}
+
+.experience-card-text{
+    position: relative;
+    top: 20px;
+    right: 100px;
+    height: fit-content;
+    margin-right: 2rem;
+    padding: 20px;
+    color: snow;
+    background-color: rgb(34, 34, 34);
+    border-radius: 20px;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.experience-frameworks {
+    max-width: 40rem;
+
+}
+.experience-frameworks span{
+    font-family: 'Press Start 2P',cursive;
+    color: #e97725;
+    padding-right: 1rem;
+}
+
 /*Mobile view*/
 @media screen and (max-width:900px){
     #imagenlarga{
