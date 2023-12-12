@@ -44,19 +44,19 @@ backToTopButton.addEventListener("click",backToTop);
 showMsg.addEventListener('click', showCopyMessage);
 showMsg.addEventListener('click', copyMessageAnimation);
 function showCopyMessage(){
-  copyMessage.style.display="flex"
+  copyMessage.style.opacity="100"
   setTimeout(function(){
-    copyMessage.style.display="none"
-  }, 1700);
+    copyMessage.style.opacity="0"
+  }, 500);
 }
 
 showMsg2.addEventListener('click',showCopyMessage2);
 showMsg2.addEventListener('click', copyMessageAnimation2);
 function showCopyMessage2(){
-  copyMessage2.style.display="flex"
+  copyMessage2.style.opacity="100"
   setTimeout(function(){
-    copyMessage2.style.display="none"
-  }, 1700);
+    copyMessage2.style.opacity="0"
+  }, 500);
 }
 
 function copyMessageAnimation(){
