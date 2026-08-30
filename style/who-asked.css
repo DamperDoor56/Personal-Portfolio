@@ -14,20 +14,24 @@
 #Who{
     overflow-x: hidden;
     margin: auto;
-    height: 98vh;
-    z-index: 2;
-    margin: 30px;
-    display: flex;
-    flex-direction:row;
+    height: auto;
+    display:flex;
+    justify-content: space-around;
+    
 }
 #who-section-header{
     text-decoration: underline;
     text-decoration-color: #e97725;
     font-size: 3rem;
     display: flex;
-    padding: 10.25rem 0px 1.25rem 6.25rem;
     color:var(--text);
     
+}
+.text-part{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 25px;
 }
 #text{
     font-family: monospace;
