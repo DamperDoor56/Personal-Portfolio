@@ -41,24 +41,22 @@
     width: 80%;
     padding: 1rem 1rem 1rem 3rem;
     margin-top:0.2rem;
-    margin-left: 3%;
     z-index: -1;
     transition: 0.8s all ease-in-out;
 }
 #description{
     width: 40rem;
-    margin-left: 3%;
     font-size: 20px;
     color: var(--text);
-    padding: 0.2rem 1rem;
     line-height: 24px;
     transition: 0.8s all ease-in-out;
 }
 #imagenlarga{
+    width: auto;
+}
+.imagen-larga-wrapper{
     width: 30%;
     display: flex;
     z-index: 2;
-    border-radius: 15px;
-    border-color: #E76F51;
 }
 /*Ends Who asked*/
