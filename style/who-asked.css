@@ -1,0 +1,62 @@
+@import url('global.css');
+
+/* Who asked? section*/
+#about{
+    min-height: 10vh;
+}
+#particles-js canvas{
+    position: absolute;
+    background-color: #05050c9f;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+#Who{
+    overflow-x: hidden;
+    margin: auto;
+    height: auto;
+    display:flex;
+    justify-content: space-around;
+    
+}
+#who-section-header{
+    text-decoration: underline;
+    text-decoration-color: #e97725;
+    font-size: 3rem;
+    display: flex;
+    color:var(--text);
+    
+}
+.text-part{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+#text{
+    font-family: monospace;
+    font-weight: 800;
+    color: rgb(26, 26, 26) ;
+    background: #E76F51;
+    width: 80%;
+    padding: 1rem 1rem 1rem 3rem;
+    margin-top:0.2rem;
+    z-index: -1;
+    transition: 0.8s all ease-in-out;
+}
+#description{
+    width: 40rem;
+    font-size: 20px;
+    color: var(--text);
+    line-height: 24px;
+    transition: 0.8s all ease-in-out;
+}
+#imagenlarga{
+    width: auto;
+}
+.imagen-larga-wrapper{
+    width: 30%;
+    display: flex;
+    z-index: 2;
+}
+/*Ends Who asked*/
