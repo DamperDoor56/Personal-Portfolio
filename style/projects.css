@@ -1,0 +1,112 @@
+/*Starts projects section*/
+@import url('global.css');
+
+.projects-section{
+    height: 480vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.projects-section .header{
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: #e97725;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.projects-cards{
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+.project-card{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 4rem 1rem ;
+}
+.frameworks span{
+    font-family: 'Press Start 2P',cursive;
+    color: #e97725;
+    padding-right: 1rem;
+}
+.project-title{
+    font-size: 30px;
+    color: snow;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: #e97725 ;
+}
+.imagen-card{
+    width: 50%;
+    border-radius: 20px;
+    border: 2px solid #e97725;
+}
+
+.project-card-text{
+    position: relative;
+    top: 20px;
+    right: 100px;
+    margin-right: 2rem;
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    color: snow;
+    background-color: rgb(34, 34, 34);
+    border-radius: 20px;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.more-projects{
+    width: 200px;
+    align-self: flex-end;
+    padding: 0.2rem;
+    font-size: 30px;
+    color: snow;
+    margin-right: 5rem;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid #e97725;
+    border-top-right-radius: 0px;
+    transition: all 0.5s;
+}
+.more-projects a{
+  text-decoration: none;
+  color: snow;
+}
+.more-projects:hover{
+    background-color: #e97725;
+    border: 2px solid snow;
+
+}
+.project-card:hover .project-card-text{
+    opacity: 1;
+    animation: bounce 5s linear infinite;
+}
+@keyframes bounce {
+    0%  {top: 10px;}
+    10% {top: 20px;}
+    20% {top: 10px;}
+    30% {top: 20px;}
+    40% {top: 10px;}
+    50% {top: 20px;}
+    60% {top: 10px;}
+    70% {top: 20px;}
+    90% {top: 10px;}
+    100% {top: 20px;}
+}
+.project-links a{
+    text-decoration: none;
+    color: #e97725;
+    font-size: 20px;
+    margin: 2rem;
+    transition: all 0.5s;
+}
+.project-links a:hover{
+    color: #E76F51;
+    font-size: 25px;
+}
+
+

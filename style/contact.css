@@ -1,0 +1,233 @@
+@import url('global.css');
+
+/*Contact section*/
+.contact-section{
+    background:none;
+    height: 80vh;
+    z-index: 12;
+}
+.contact-section h2{
+    text-decoration: underline;
+    text-decoration-color: #e97725;
+    font-size: 50px;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 70px 0px;
+}
+#contact{
+    position: relative;
+    border-top: 2.5px solid;
+    top: -80px;
+    width: 8%;
+    left: 45%;
+    border-color: #e97725;
+}
+#contact-links{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-content: center;
+    padding: -1rem 3rem;
+    font-size: 40px;
+    text-decoration: none;
+    text-shadow: 2px 2px 1px #000000ce;
+    position: relative;
+}
+#contact-links button{
+    overflow-y: hidden;
+    font-size: 34px;
+    text-decoration: none;
+    color: var(--text);
+    position: relative;
+    top: 0px;
+    transition: 0.3s ease-out;
+}
+
+#contact-links button:hover{
+    color: #e97725;
+    top: -15px;
+}
+.copyMessage{
+    display: flex;
+    opacity: 0;
+    background: #e97725;
+    color: var(--text);
+    text-shadow: var(--box-shadow);
+    padding-left: 25px;
+    font-size: 25px;
+    z-index: 999;
+    width: 110px;
+    height: 36px;
+    border-radius: 25px;
+    position:relative;
+    bottom: 150px;
+}
+#arrow{
+    position: relative;
+    top: 35px;
+    right: 50px;
+    width: 0%;
+    height: 0%;
+    background-color: transparent;
+    border-top:10px solid #e97725;
+    border-bottom:10px solid transparent;
+    border-right:10px solid transparent;
+    border-left:10px solid transparent;
+}
+.copyMessage2{
+    display: flex;
+    opacity: 0;
+    background: #e97725;
+    color: var(--text);
+    text-shadow: var(--box-shadow);
+    padding-left: 25px;
+    font-size: 25px;
+    z-index: 999;
+    width: 110px;
+    border-radius: 25px;
+    position:relative;
+    bottom: 150px;
+}
+#arrow2{
+    position: relative;
+    top: 35px;
+    right: 50px;
+    width: 0%;
+    height: 0%;
+    background-color: transparent;
+    border-top:10px solid #e97725;
+    border-bottom:10px solid transparent;
+    border-right:10px solid transparent;
+    border-left:10px solid transparent;
+}
+#txtCopyInput,#txtCopyInput2{
+    position: fixed;
+    transform: translateX(-1000%);
+ }
+.dev{
+    padding-top: 70px;
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 15px;
+    color: var(--text);
+    text-shadow: var(--textshadow);
+    font-family: 'Press Start 2P', cursive;
+}
+.dev:hover .code{
+    color: #e97725;
+}
+/*message animations*/
+.msgEntrance{
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-name: msgEntrance;
+}
+/* zoom in*/
+@keyframes msgEntrance {
+    from{
+        opacity: 0;
+        transform: scale3d(0.3,0.3,0.3);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.hrfooter{
+    position: relative;
+    top: 0%;
+    left: 26%;
+    width: 50%;
+    border-color: #e97725;
+}
+#careful{
+    display: flex;
+    justify-content: center;
+    position:relative ;
+    top: -8%;
+}
+#careful a{
+    text-decoration: none;
+}
+#careful a:hover{
+    color: var(--text);
+}
+#txtCopyInput,#txtCopyInput2{
+   position: fixed;
+}
+.buto{
+    background: none;
+    border-color:transparent ;
+    height: 100px;
+    cursor: pointer;
+}
+.buto a{
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+.buto:hover a{
+    color: #e97725;
+}
+#mobile-space{
+    display: none;
+}
+/*Ends contact section*/
+
+.bussiness{
+    border-radius: 50px;
+    object-fit: cover;
+}
+/*experience Section*/
+.experience-section{
+    height: fit-content;
+    background-color: #060e169f;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.experience-section .header{
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: #e97725;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.experience-card{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    padding: 1rem;
+}
+.experience-card:hover .experience-card-text{
+    opacity: 1;
+    animation: bounce 5s linear infinite;
+}
+
+.experience-card-text{
+    position: relative;
+    top: 20px;
+    right: 100px;
+    height: fit-content;
+    margin-right: 2rem;
+    padding: 20px;
+    color: snow;
+    background-color: rgb(34, 34, 34);
+    border-radius: 20px;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.experience-frameworks {
+    max-width: 40rem;
+
+}
+.experience-frameworks span{
+    font-family: 'Press Start 2P',cursive;
+    color: #e97725;
+    padding-right: 1rem;
+}

@@ -1,0 +1,206 @@
+/*Nav Section */
+@import url('global.css');
+
+.nav-mobile{
+    display: none;
+}
+.nav{
+    display: flex;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 10%;
+    z-index: 999;
+    background:var(--background);
+    letter-spacing: 2px;
+    animation-timing-function: ease-in;
+    transition: all 0.5s;
+}
+#nav-list{
+    list-style: none;
+    display: flex;
+    position: fixed;
+    left: 800px;
+    justify-content: flex-end;
+    margin-right: -60px;
+    margin-top: 25px;
+}
+#nav-list a{
+    text-decoration: none;
+}
+.hover-underline-animation{
+    margin-right: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    color: var(--text);
+    text-decoration: none;
+    text-shadow: var(--textshadow);
+    transition: 0.3s all ease-in;
+}
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: var(--text);
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #e97725;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .hover-underline-animation:hover{
+    color: #e97725;
+  }
+#dev{
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 25px;
+    color: var(--text);
+    text-shadow: var(--textshadow);
+    font-family: 'Press Start 2P', cursive;
+}
+
+.code{
+    color: transparent;
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
+    transition: color 0.3s ease-out;
+    text-shadow: none;
+}
+
+#dev:hover .code{
+    color: #e97725;
+}
+.nav-scrolled{
+    --background:#212529;
+    --textshadow: 0px;
+    --decoration:#e97725;
+    transition: 0.5s all ease-in-out;
+    box-shadow: var(--box-shadow);
+}
+#myNav{
+    display: none;
+}
+/*Welcome section*/
+.welcome-section{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.text-box{
+    padding: 1rem;
+}
+.picture{
+    width: 28%;
+    z-index: 2;
+}
+.text-on-top{
+    font-size: 60px;
+    color: snow;
+    z-index: 2;
+
+}
+.Name{
+    color: snow;
+    font-size: 50px;
+    transition: all 0.5s;
+    z-index: 2;
+
+}
+.bigbox{
+    position: absolute;
+    right: 200px;
+    z-index: 0;
+    text-align: end;
+    background-color: #e97725;
+    width: 70%;
+    transform: translateX(-200%);
+    transition: all 0.8s;
+}
+.textinside{
+    font-family: monospace;
+    padding: 0.5rem 10rem 0 0.5rem;
+    letter-spacing: 5px;
+    color: snow;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.welcome-section:hover .bigbox{
+    transform: translateX(0%)
+}
+.welcome-section:hover .Name{
+    font-size: 52px;
+    color: #e97725;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+.scrolldown{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+.scrolldown span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height:100% ;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    animation: animate 1s linear infinite;
+    opacity: 0;
+}
+
+.scrolldown span:nth-child(1){
+    transform: translate(-15px,-15px);
+    animation-delay: -0.3s;
+}
+.scrolldown span:nth-child(2){
+    transform: translate(0,0);
+    animation-delay: -0.2s;
+}
+.scrolldown span:nth-child(3){
+    transform: translate(15px,15px);
+    animation-delay: -0.1s;
+}
+
+@keyframes animate{
+    0%{
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+    25%{
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+    50%,100%{
+        top: 5px;
+        left: 5px;
+        opacity: 1;
+    }
+}
