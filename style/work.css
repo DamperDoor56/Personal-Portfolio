@@ -1,19 +1,20 @@
 @import url('global.css');
 
 /*Starts Work Section*/
-#comehere{
+#work{
     min-height: 10vh;
 }
 #work{
-    min-height: 110vh;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    margin-bottom: 10rem;
 }
 #work h1{
     text-decoration: underline;
-    text-decoration-color: #e97725;
+    text-decoration-color: var(--primary-orange);
     margin:2rem 0;
     color: var(--text);
     font-size: 3rem;
@@ -27,7 +28,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 3rem;
-
 }
 .box{
     text-align: center;
@@ -74,19 +74,27 @@
     transition: all 0.8s ease;
 }
 #work .content .box:hover .inner::after{
-    border-color:#fd3300;
+    border-color: var(--secondary-orange);
     width: 100%;
     height: 100%;
 }
 #work .content .box:hover .inner::before{
-    border-color: #fd3300;
+    border-color:  var(--secondary-orange);
     width: 100%;
     height: 100%;
 }
 #work .content .box:hover .inner .icon{
-    color: #fd3300;
+    color: var(--secondary-orange);
 }
 #work .content .box:hover{
     background-color: rgba(146, 70, 19, 0.2);
+}
+
+@media (max-width: 1000px) {
+  .content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 }
 /*Ends work section*/
