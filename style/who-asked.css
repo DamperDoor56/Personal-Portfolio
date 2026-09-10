@@ -2,7 +2,8 @@
 
 /* Who asked? section*/
 #about{
-    min-height: 10vh;
+    min-height: 100vh;
+    display: flex;
 }
 #particles-js canvas{
     position: absolute;
@@ -12,11 +13,13 @@
     z-index: -1;
 }
 #Who{
+    width: 100%;
     overflow-x: hidden;
-    margin: auto;
+    margin-top: 6rem;
     height: auto;
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10px;
     
 }
 #who-section-header{
