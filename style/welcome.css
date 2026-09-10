@@ -78,7 +78,7 @@
 .picture{
     width: 100%;
     border-radius: 50%;
-    background-color: var(--primary-orange);
+    background-color: var(--decoration);
 }
 .text-on-top{
     font-size: 60px;
