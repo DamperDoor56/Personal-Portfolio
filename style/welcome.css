@@ -11,7 +11,7 @@
     font-size: 30px;
     width: 70px;
     height: 70px;
-    background-color:#e97725 ;
+    background-color: var(--primary-orange) ;
     color: #fff;
     cursor: pointer;
     border: 3px solid #fff;
@@ -22,8 +22,8 @@
 }
 #back-to-top-btn:hover, #back-to-top-btn:focus{
     background-color:#fff ;
-    color: #e97725;
-    border: 3px solid #e97725;
+    color:  var(--primary-orange);
+    border: 3px solid  var(--primary-orange);
 }
  /*Button animations*/
  .btnEntrance{
@@ -78,8 +78,7 @@
 .picture{
     width: 100%;
     border-radius: 50%;
-    background-color: var(--decoration);
-
+    background-color: var(--primary-orange);
 }
 .text-on-top{
     font-size: 60px;
@@ -99,7 +98,7 @@
     right: 200px;
     z-index: 0;
     text-align: end;
-    background-color: #e97725;
+    background-color:  var(--primary-orange);
     width: 70%;
     transform: translateX(-200%);
     transition: all 0.8s;
@@ -117,7 +116,7 @@
 }
 .welcome-section:hover .Name{
     font-size: 52px;
-    color: #e97725;
+    color:  var(--primary-orange);
     font-weight: 800;
     letter-spacing: 5px;
 }
