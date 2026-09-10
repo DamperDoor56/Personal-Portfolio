@@ -28,7 +28,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 3rem;
-
 }
 .box{
     text-align: center;
@@ -75,19 +74,27 @@
     transition: all 0.8s ease;
 }
 #work .content .box:hover .inner::after{
-    border-color:#fd3300;
+    border-color: var(--secondary-orange);
     width: 100%;
     height: 100%;
 }
 #work .content .box:hover .inner::before{
-    border-color: #fd3300;
+    border-color:  var(--secondary-orange);
     width: 100%;
     height: 100%;
 }
 #work .content .box:hover .inner .icon{
-    color: #fd3300;
+    color: var(--secondary-orange);
 }
 #work .content .box:hover{
     background-color: rgba(146, 70, 19, 0.2);
+}
+
+@media (max-width: 1000px) {
+  .content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 }
 /*Ends work section*/
