@@ -14,7 +14,7 @@
     z-index: 999;
     background:var(--background);
     letter-spacing: 2px;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
     transition: all 0.5s;
     justify-content: space-between;
 }
@@ -66,7 +66,6 @@
   }
 #dev{
     display: flex;
-    justify-content: left;
     text-decoration: none;
     font-size: 30px;
     align-self: center;
@@ -124,33 +123,6 @@
     transition: all 0.5s;
     z-index: 2;
 
-}
-.bigbox{
-    position: absolute;
-    right: 200px;
-    z-index: 0;
-    text-align: end;
-    background-color: #e97725;
-    width: 70%;
-    transform: translateX(-200%);
-    transition: all 0.8s;
-}
-.textinside{
-    font-family: monospace;
-    padding: 0.5rem 10rem 0 0.5rem;
-    letter-spacing: 5px;
-    color: snow;
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-.welcome-section:hover .bigbox{
-    transform: translateX(0%)
-}
-.welcome-section:hover .Name{
-    font-size: 52px;
-    color: #e97725;
-    font-weight: 800;
-    letter-spacing: 5px;
 }
 .scrolldown{
     position: absolute;
