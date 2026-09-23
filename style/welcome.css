@@ -95,25 +95,33 @@
 }
 .bigbox{
     position: absolute;
-    right: 200px;
+    right: 20%;
     z-index: 0;
     text-align: end;
     background-color:  var(--primary-orange);
-    width: 70%;
+    width: 100%;
     transform: translateX(-200%);
     transition: all 0.8s;
+    height: 3rem;
 }
 .textinside{
     font-family: monospace;
-    padding: 0.5rem 10rem 0 0.5rem;
     letter-spacing: 5px;
-    color: snow;
+    color: transparent;
     font-size: 1.5rem;
+    position: absolute;
+    z-index: 4;
+    margin-top: 3px;
     font-weight: 800;
 }
 .welcome-section:hover .bigbox{
     transform: translateX(0%)
 }
+.welcome-section:hover .textinside{
+    color: var(--dark-blue);
+    transition: all ease-in-out 0.5s;
+}
+
 .welcome-section:hover .Name{
     font-size: 52px;
     color:  var(--primary-orange);
